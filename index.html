@@ -193,11 +193,6 @@
         document.getElementById('securityOverlay').style.display = 'none';
         document.getElementById('mainContainer').style.display = 'flex';
     }
-// SILENT GUEST LOGIN ON STARTUP
-        if (!puter.auth.isSignedIn()) {
-            puter.auth.signIn({ method: 'guest', allowPopup: false }).catch(() => console.log("Guest login ready."));
-        }
-    }
 
  // --- CHAT LOGIC ---
     const SOMIKA_BRAIN = `You are Somika AI, a personal life mentor, study assistant, and supportive guide for Somika Bhandari.
